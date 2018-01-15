@@ -1,9 +1,5 @@
-pip install requests
-
 import requests
 import os
-
-set OMDB_KEY=abcd1234
 
 
 key = os.environ['OMDB_KEY'] #Read key from environment variable
