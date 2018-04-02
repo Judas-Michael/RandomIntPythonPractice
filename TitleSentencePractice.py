@@ -10,6 +10,12 @@ def main():
 		print("This sentence is not valid. Please use a-z and 0-9")
 	#validates the data
 
+	
+	camelCased = camel_case(sentence)
+	print(camelcased)
+	
+	
+def camel_case(sentence):
 	sentence_lower = sentence.lower()
 
 	
@@ -22,7 +28,7 @@ def main():
 		cap_word = word[0].upper() + word[1:] #capitalizes every word
 		capitalized_words.append(cap_word) #adds word to new list
 	output = ' '.join(capitalized_words)
-	print(output)
+	return output
 	
 def display_banner():
 	msg = 'AWESOME camelCaseGenerator PROGRAM'
